@@ -1,0 +1,299 @@
+:root {
+  --background-color: #fdf2e4;
+  --background-color-2: #f8ac85;
+  --content-color-chery: #f06951;
+  --content-color-olive: #86795a;
+  --content-color-green: #92b771;
+  --title-font: "Fira Sans Extra Condensed", sans-serif;
+  --text-font: "Lora", serif;
+  --subtitle-font: "Ruluko", sans-serif;
+}
+* {
+  padding: 0;
+  margin-bottom: 0 !important;
+}
+body {
+  min-height: 100%;
+}
+
+/*Navbar*/
+nav {
+  background-color: var(--content-color-green);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  max-width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  font-family: var(--text-font);
+  font-optical-sizing: auto;
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+nav a:hover {
+  color: var(--background-color);
+}
+nav li:first-child {
+  margin-right: auto !important;
+}
+nav i {
+  font-size: 30px;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 350px;
+  z-index: 1000;
+  background: #92b77197;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  color: black !important;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a:hover {
+  background: var(--content-color-green);
+  color: white;
+}
+.menu-icon {
+  display: none;
+}
+
+/*Hero page*/
+.hero-page {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding: 280px 100px;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/901/original/background.png?1713708175");
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  font-family: var(--title-font);
+  font-size: 150px;
+  text-align: start;
+  color: var(--content-color-olive);
+}
+.hero-page p {
+  text-align: start;
+  font-family: var(--subtitle-font);
+  font-size: 64px;
+  color: var(--content-color-chery);
+}
+.hero-page a {
+  margin: 40px;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 10px 20px;
+  margin-top: 50px !important;
+  border: solid 1px #92b771;
+  background-color: #92b771;
+  color: white;
+  font-family: var(--text-font);
+  font-size: 16px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--content-color-chery);
+  border: #f06951 1px solid;
+}
+/*About page*/
+#about {
+  background: var(--background-color-2);
+  padding: 50px 20px;
+  text-align: center;
+}
+#about h2 {
+  font-size: 48px;
+  font-family: var(--subtitle-font);
+  color: white;
+  padding-bottom: 20px;
+}
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.about p {
+  margin: 10px 30px !important;
+  font-family: var(--text-font);
+  line-height: 35px;
+  color: white;
+  font-size: 24px;
+  padding: 30px;
+  background: var(--content-color-chery);
+  border-radius: 10px;
+}
+.about img {
+  max-width: 250px;
+}
+
+/*Indoor Gardening page*/
+#indoor-gardening {
+  background: var(--background-color);
+  padding-top: 30px;
+}
+#indoor-gardening h2 {
+  text-align: center;
+  font-family: var(--title-font);
+  color: var(--content-color-olive);
+  font-size: 72px;
+}
+#indoor-gardening h3 {
+  font-family: var(--subtitle-font);
+  color: var(--content-color-chery);
+  font-size: 48px;
+  text-align: center;
+  padding: 0 30px;
+}
+.list,
+.list-2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+.list ul {
+  background: var(--content-color-green);
+  padding: 30px 80px;
+  margin-bottom: 40px;
+  list-style: none;
+  border-radius: 180px;
+  color: white;
+  line-height: 30px;
+  font-family: var(--text-font);
+  text-align: center;
+  font-size: 24px;
+}
+.list-2 ul {
+  list-style: none;
+  padding: 30px;
+  font-family: var(--text-font);
+  font-size: 24px;
+  background: var(--content-color-green);
+  color: white;
+  margin: 10px 0 !important;
+  text-wrap: wrap;
+  border-radius: 10px;
+}
+.list-2 li,
+.list li {
+  text-wrap: wrap;
+  list-style: circle;
+}
+
+/*Comunuty gardens*/
+#comunity-garden {
+  background: var(--background-color-2);
+  text-align: center;
+  color: white;
+  padding: 40px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#comunity-garden h2 {
+  font-family: var(--subtitle-font);
+  font-size: 48px;
+  padding-bottom: 20px;
+}
+#comunity-garden p {
+  font-family: var(--text-font);
+  font-size: 24px;
+  background: var(--content-color-chery);
+  padding: 30px;
+  border-radius: 10px;
+}
+.carousel button:hover {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 0;
+}
+.carousel {
+  max-width: 50%;
+  margin-top: 20px !important;
+}
+.carousel button {
+  box-shadow: none;
+  color: white;
+}
+
+/*Footer*/
+footer {
+  background-color: var(--content-color-green);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-family: var(--text-font);
+}
+
+/*Responsive*/
+@media (max-width: 1024px) {
+  .responsive-hide {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  h1 {
+    font-size: 78px;
+    text-align: center;
+  }
+  .hero-page {
+    background-image: none;
+    background-color: var(--background-color);
+    padding: 100px 0;
+  }
+  .hero-page p {
+    text-align: center;
+    font-size: 28px;
+  }
+  .hero-page a {
+    text-align: center;
+  }
+  #about h2,
+  #comunity-garden h2 {
+    font-size: 32px;
+  }
+  #about p {
+    font-size: 20px;
+  }
+  #indoor-gardening h2 {
+    font-size: 48px;
+  }
+  #indoor-gardening h3 {
+    font-size: 30px;
+  }
+  .carousel {
+    max-width: inherit;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+  }
+}
