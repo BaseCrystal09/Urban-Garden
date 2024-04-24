@@ -240,7 +240,93 @@ button:hover {
   box-shadow: none;
   color: white;
 }
+/*Seasonal tips*/
+#seasonal-tips {
+  background-color: var(--background-color);
+  padding: 40px 30px;
+  text-align: center;
+}
+#seasonal-tips h2 {
+  font-family: var(--title-font);
+  text-align: center;
+  font-size: 72px;
+  color: var(--content-color-olive);
+}
+.seasons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-wrap: wrap;
+  text-align: start;
+}
+.seasons img {
+  max-width: 50px;
+  padding-left: 10px;
+}
+.seasons li {
+  font-family: var(--text-font) !important;
+  font-size: 18px;
+  line-height: 35px;
+}
+.spring,
+.summer,
+.fall,
+.winter {
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  max-width: 40%;
+}
+.spring h3,
+.summer h3,
+.fall h3,
+.winter h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: var(--subtitle-font);
+  font-size: 38px;
+}
+.spring,
+.summer,
+.fall,
+.winter {
+  background-color: var(--content-color-green);
+  color: white;
+}
+.spring {
+  padding-bottom: 70px;
+}
+.spring strong {
+  color: #86795a;
+}
 
+.fall {
+  color: white;
+}
+#seasonal-tips p {
+  text-align: center;
+  font-family: var(--text-font);
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px !important;
+}
+#seasonal-tips a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px 20px;
+  border: solid 1px #92b771;
+  background-color: #92b771;
+  color: white;
+  font-family: var(--text-font);
+  font-size: 16px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+#seasonal-tips a:hover {
+  cursor: pointer;
+  background-color: var(--content-color-chery);
+  border: #f06951 1px solid;
+}
 /*Footer*/
 footer {
   background-color: var(--content-color-green);
@@ -281,7 +367,8 @@ footer {
   #about p {
     font-size: 20px;
   }
-  #indoor-gardening h2 {
+  #indoor-gardening h2,
+  #seasonal-tips h2 {
     font-size: 48px;
   }
   #indoor-gardening h3 {
@@ -289,6 +376,12 @@ footer {
   }
   .carousel {
     max-width: inherit;
+  }
+  .spring,
+  .summer,
+  .fall,
+  .winter {
+    max-width: 100%;
   }
 }
 
