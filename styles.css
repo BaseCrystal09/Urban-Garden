@@ -81,21 +81,21 @@ nav i {
   display: flex;
   flex-direction: column;
   padding: 0;
-  padding: 280px 100px;
+  padding: 200px 100px;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/123/901/original/background.png?1713708175");
   background-size: cover;
   background-position: center;
 }
 h1 {
   font-family: var(--title-font);
-  font-size: 150px;
+  font-size: 120px;
   text-align: start;
   color: var(--content-color-olive);
 }
 .hero-page p {
   text-align: start;
   font-family: var(--subtitle-font);
-  font-size: 64px;
+  font-size: 48px;
   color: var(--content-color-chery);
 }
 .hero-page a {
@@ -140,13 +140,13 @@ button:hover {
   font-family: var(--text-font);
   line-height: 35px;
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   padding: 30px;
   background: var(--content-color-chery);
   border-radius: 10px;
 }
 .about img {
-  max-width: 250px;
+  max-width: 200px;
 }
 
 /*Indoor Gardening page*/
@@ -158,12 +158,12 @@ button:hover {
   text-align: center;
   font-family: var(--title-font);
   color: var(--content-color-olive);
-  font-size: 72px;
+  font-size: 64px;
 }
 #indoor-gardening h3 {
   font-family: var(--subtitle-font);
   color: var(--content-color-chery);
-  font-size: 48px;
+  font-size: 40px;
   text-align: center;
   padding: 0 30px;
 }
@@ -184,13 +184,13 @@ button:hover {
   line-height: 30px;
   font-family: var(--text-font);
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
 }
 .list-2 ul {
   list-style: none;
   padding: 30px;
   font-family: var(--text-font);
-  font-size: 24px;
+  font-size: 18px;
   background: var(--content-color-green);
   color: white;
   margin: 10px 0 !important;
@@ -221,7 +221,7 @@ button:hover {
 }
 #comunity-garden p {
   font-family: var(--text-font);
-  font-size: 24px;
+  font-size: 18px;
   background: var(--content-color-chery);
   padding: 30px;
   border-radius: 10px;
@@ -249,7 +249,7 @@ button:hover {
 #seasonal-tips h2 {
   font-family: var(--title-font);
   text-align: center;
-  font-size: 72px;
+  font-size: 64px;
   color: var(--content-color-olive);
 }
 .seasons {
@@ -266,7 +266,7 @@ button:hover {
 }
 .seasons li {
   font-family: var(--text-font) !important;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 35px;
 }
 .spring,
@@ -297,7 +297,10 @@ button:hover {
 .spring {
   padding-bottom: 70px;
 }
-.spring strong {
+.spring strong,
+.summer strong,
+.fall strong,
+.winter strong {
   color: #86795a;
 }
 
@@ -307,7 +310,7 @@ button:hover {
 #seasonal-tips p {
   text-align: center;
   font-family: var(--text-font);
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 30px;
   margin-bottom: 30px !important;
 }
